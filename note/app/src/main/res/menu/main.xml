@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_sort"
+        android:title="@string/action_sort"
+        android:orderInCategory="100"
+        app:showAsAction="never" >
+
+        <menu>
+
+            <item
+                android:id="@+id/action_sort_by_create"
+                android:title="Created Time"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_sort_by_modify"
+                android:title="Modified Time"
+                app:showAsAction="never" />
+
+        </menu>
+
+    </item>
+</menu>

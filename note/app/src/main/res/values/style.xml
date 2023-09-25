@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Cấu hình các thuộc tính của theme của bạn -->
+    </style>
+    <style name="AppTheme.EditNoteActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- ... -->
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.note.ui.account.AccountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account" />
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.note.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_trash"
+        android:name="com.example.note.ui.trash.TrashFragment"
+        android:label="@string/menu_trash"
+        tools:layout="@layout/fragment_trash" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.note.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.note.ui.home.HomeFragment"
+        android:label="@string/bottom_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/calendar"
+        android:name="com.example.note.ui.Calendar.CalendarFragment"
+        android:label="@string/bottom_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/school"
+        android:name="com.example.note.ui.School.SchoolFragment"
+        android:label="@string/bottom_school"
+        tools:layout="@layout/fragment_school" />
+
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.note.ui.settings.SettingsFragment"
+        android:label="@string/bottom_setting"
+        tools:layout="@layout/fragment_settings" />
+
+    <action
+        android:id="@+id/call_action_search"
+        app:destination="@id/nav_home" />
+</navigation>
