@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="388dp"
+                    android:layout_height="131dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="199dp"
+                    android:layout_height="132dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.509"
+                    app:srcCompat="@drawable/nam" />
+
+                <TextView
+                    android:id="@+id/textViewHoTenLabel"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewHoTenValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Họ tên"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintEnd_toEndOf="@+id/avatar"
+                    app:layout_constraintHorizontal_bias="0.486"
+                    app:layout_constraintStart_toStartOf="@+id/avatar"
+                    app:layout_constraintTop_toBottomOf="@+id/avatar" />
+
+                <TextView
+                    android:id="@+id/textViewIDLabel"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/textViewIDValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewHoTenValue"
+                    app:layout_constraintStart_toStartOf="@+id/textViewHoTenValue"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewHoTenValue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewIDValue">
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewNgaySinhLabel"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Ngày Sinh"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/textViewNgaySinhValue"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="08/12/2001"
+                        android:padding="10dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewGioiTinhLabel"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Giới Tính"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/textViewGioiTinhValue"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nam"
+                        android:padding="10dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewQueQuanLabel"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Quê Quán"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/textViewQueQuanValue"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Bắc Ninh"
+                        android:padding="10dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewGmailLabel"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Gmail"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/textViewGmailValue"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="ngvana@gmail.com"
+                        android:padding="10dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewSDTLabel"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="SĐT"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/textViewSDTValue"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="0314313466"
+                        android:padding="10dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewKhoaLabel"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Khoa"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/textViewKhoaValue"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="CNTT"
+                        android:padding="10dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewNienKhoaLabel"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Niên Khóa"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/textViewNienKhoaValue"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="16"
+                        android:padding="10dp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewLopLabel"
+                        android:layout_width="91dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="Lớp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/textViewLopValue"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="CT4C"
+                        android:padding="10dp" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

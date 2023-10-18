@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">note</string>
+    <string name="navigation_drawer_open">Mở Bảng Điều Hướng</string>
+    <string name="navigation_drawer_close">Đóng Bảng Điều Hướng</string>
+    <string name="nav_header_desc">Thanh Điều Hướngr</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="action_pin">Ghim</string>
+    <string name="action_del">Xóa</string>
+    <string name="action_deleteForever">Xóa</string>
+    <string name="action_restore">Khôi phục</string>
+    <string name="action_search">Tìm kiếm</string>
+    <string name="action_sort">Lọc</string>
+    <string name="bottom_home">Ghi chú</string>
+    <string name="bottom_calendar">Lịch</string>
+    <string name="bottom_school">Môn học</string>
+    <string name="bottom_setting">Cài đặt</string>
+
+    <string name="menu_home">Ghi chú</string>
+    <string name="menu_account">Tài khoản</string>
+    <string name="menu_trash">Thùng rác</string>
+    <string name="menu_settings">Cài đặt</string>
+    <string name="menu_logout">Đăng xuất</string>
+
+    <string name="bot_home">Trang chủ</string>
+    <string name="bot_calendar">Lịch</string>
+    <string name="bot_school">Lớp</string>
+    <string name="bot_settings">Cài đặt</string>
+
+    <string name="change_password_button">Đổi mật khẩu</string>
+    <string name="languages">Ngôn ngữ</string>
+    <string name="btnSearch">Tìm kiếm</string>
+    <string name="ed_search">  Nhấn để tìm kiếm</string>
+    <string name="dialog_language">Tiếng Việt</string>
+    <string name="note_belong">Của Tôi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="sort_options">
+        <item>Lọc bởi thời gian tạo</item>
+        <item>Lọc bởi thời gian cập nhật</item>
+    </string-array>
+</resources>
